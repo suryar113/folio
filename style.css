@@ -8,6 +8,16 @@
   --glow-color: rgba(255, 255, 255, 0.03);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #ffffff;
+    --text-primary: #000000;
+    --text-secondary: #555555;
+    --text-dim: #888888;
+    --glow-color: rgba(0, 0, 0, 0.03);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +73,20 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 48px;
+  height: auto;
+  object-fit: contain;
 }
 
 #title {
