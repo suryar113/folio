@@ -1,4 +1,7 @@
+import { inject } from '@vercel/analytics';
+inject();
 import './style.css';
+
 
 // Subtle mouse track for the radial glow
 const glow = document.querySelector('.radial-glow');
