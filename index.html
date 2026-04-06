@@ -3,50 +3,48 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>surya | makes stuff</title>
-  <meta name="description" content="surya's personal links and projects." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>surya</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="/src/assets/folio%20logo%20dark%20mode.svg" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="/src/assets/folio%20logo%20light%20mode.svg" media="(prefers-color-scheme: light)">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/folio logo dark mode.svg" id="favicon">
+  <script>
+    const favicon = document.getElementById('favicon');
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      favicon.href = '/src/assets/folio logo light mode.svg';
+    }
+  </script>
 </head>
 
 <body>
-  <div id="app">
-    <div class="radial-glow"></div>
+  <main class="container">
+    <header class="hero">
+      <h1 class="brand frame">
+        <span class="brand-text">surya</span>
+        <span class="border-left"></span>
+        <span class="border-right"></span>
+      </h1>
+      <p class="tagline">building digital experiences</p>
+    </header>
 
-    <main class="container">
-      <header class="hero">
-        <h1 id="title">surya</h1>
-        <p id="subtitle">i make stuff</p>
-      </header>
+    <div class="connector"></div>
 
-      <nav class="links">
-        <a href="https://skience.io" class="link-item">skience</a>
-        <a href="https://mathsurvey.skience.io/" class="link-item">math survey</a>
-        <!-- <a href="#" class="link-item">youtube</a>
-          <a href="#" class="link-item">create-t3-app</a>
-          <a href="#" class="link-item">blog</a>
-          <a href="#" class="link-item">sponsors</a> -->
-      </nav>
-    </main>
+    <nav class="links">
+      <a href="https://skience.io" class="link-item">skience</a>
+      <a href="https://mathsurvey.skience.io/" class="link-item">math survey</a>
+    </nav>
+  </main>
 
-    <footer class="footer">
-      <div class="footer-links">
-        <a href="https://github.com/suryar113" class="footer-item">gh</a>
-        <a href="https://www.instagram.com/clt.surya/" class="footer-item">insta</a>
-        <!-- <a href="#" class="footer-item">twitch</a> -->
-        <a href="https://discord.com/invite/DGpV6d6X" class="footer-item">discord</a>
-        <a href="https://linktr.ee/suryaraghavan" class="footer-item">bio</a>
-      </div>
-    </footer>
-  </div>
-  <script type="module" src="/main.js"></script>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://github.com/suryar113" class="footer-item">gh</a>
+      <a href="https://www.instagram.com/clt.surya/" class="footer-item">insta</a>
+      <a href="https://discord.com/invite/DGpV6d6X" class="footer-item">discord</a>
+      <a href="https://linktr.ee/suryaraghavan" class="footer-item">bio</a>
+    </div>
+  </footer>
 </body>
 
 </html>
